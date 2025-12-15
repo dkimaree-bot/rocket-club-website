@@ -1,18 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Events & Contact - ASTRA Labs</title>
+		<title>About Us - ASTRA Labs</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-
 			/* Page background — same as index */
 body {
 	background-image:
 		linear-gradient(to top, rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-		url("images/events2.jpg"); /* change image if you want */
+		url("images/aboutus.jpg"); /* change image if you want */
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -26,6 +25,36 @@ body {
 				--light-bg: #F5F5F5;
 				--black: #000000;
 			}
+
+			/* Menu background */
+#menu {
+	background-color: var(--dark-bg);
+}
+
+/* Menu inner background */
+#menu .inner {
+	background-color: var(--primary-red);
+}
+
+/* Menu links */
+#menu ul.links li a {
+	color: #ffffff;
+}
+
+/* Hover state */
+#menu ul.links li a:hover {
+	background-color: #a01628;
+}
+
+/* Menu heading */
+#menu h2 {
+	color: #ffffff;
+}
+
+/* Close button */
+#menu .close {
+	color: #ffffff;
+}
 
 			#header { background-color: var(--dark-bg); }
 			
@@ -41,36 +70,34 @@ body {
 			a { color: var(--primary-red); }
 			a:hover { color: #a01628; }
 			
-			h2, h3 { color: var(--primary-red); }
+			h2, h3, h4 { color: var(--primary-red); }
 			
 			#footer { background-color: var(--dark-bg); }
 			
 			.wrapper header h2 { color: var(--primary-red); }
-
-
-	/* Make text box black with some opacity, same size as article */
-.features article .overlay-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.6); /* adjust opacity as needed */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.features article {
-  position: relative; /* needed so overlay-text sits over the image */
-}
-
-
+			
+			.team-member {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			
+			.team-member img {
+				border-radius: 50%;
+				width: 150px;
+				height: 150px;
+				object-fit: cover;
+				margin-bottom: 15px;
+			}
+			
+			.team-member h4 {
+				margin-bottom: 5px;
+			}
+			
+			.team-member .role {
+				color: var(--gray);
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -103,8 +130,8 @@ body {
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Events & Contact</h2>
-								<p>Stay connected with ASTRA Labs. Join our upcoming events and reach out with any questions.</p>
+								<h2>About ASTRA Labs</h2>
+								<p>Meet our team and learn about our mission to push the boundaries of student rocketry.</p>
 							</div>
 						</header>
 
@@ -112,48 +139,86 @@ body {
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">Upcoming Events</h3>
-									<p>Check out our upcoming launches, workshops, and team meetings. All Seneca students are welcome to attend and learn more about rocketry.</p>
+									<h3 class="major">Our Team</h3>
+									<p>ASTRA Labs is led by passionate students from diverse engineering backgrounds. Our executive team coordinates design, fabrication, testing, and competition participation.</p>
 
-									<section class="features">
-  <article>
-    <a href="#" class="image">
-      <img src="images/pic04.jpg" alt="ASTRA Labs Rocket">
-    </a>
-    <div class="overlay-text">
-      <h3 class="major">No Upcoming Events</h3>
-      <p>We do not have any events scheduled right now. Stay tuned to find out when we will launch next!</p>
-    </div>
-  </article>
-</section>
+									<div class="row gtr-uniform">
+										<div class="col-4 col-12-medium team-member">
+											<img src="images/pic01.jpg" alt="Saiprasad Dhodi" />
+											<h4>Saiprasad Dhodi</h4>
+											<p class="role">President</p>
+											<p>Leading the club's strategic direction and overseeing all major projects and competitions.</p>
+										</div>
+										<div class="col-4 col-12-medium team-member">
+											<img src="images/pic02.jpg" alt="Roger Lungsee" />
+											<h4>Roger Lungsee</h4>
+											<p class="role">Vice-President</p>
+											<p>Coordinating team operations, managing sub-teams, and supporting technical development.</p>
+										</div>
+										<div class="col-4 col-12-medium team-member">
+											<img src="images/pic03.jpg" alt="Danielle Heron" />
+											<h4>Danielle Heron</h4>
+											<p class="role">Treasurer</p>
+											<p>Managing club finances, sponsorships, and budgeting for projects and competitions.</p>
+										</div>
+									</div>
 
-
-
-
-									<h3 class="major">Get In Touch</h3>
-									<p>Have questions about joining ASTRA Labs? Want to collaborate or sponsor our team? Reach out through any of the channels below.</p>
-
-									<ul class="contact" style="list-style: none; padding: 0;">
-										<li style="padding: 10px 0;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/astra-labs-engineers" target="_blank">ASTRA Labs Engineers</a></li>
-										<li style="padding: 10px 0;"><strong>Instagram:</strong> <a href="https://www.instagram.com/astra.labs.engineers/" target="_blank">@astra.labs.engineers</a></li>
+									<h3 class="major">Our Goals</h3>
+									
+									<h4>Connect the Seneca Community</h4>
+									<ul>
+										<li>By establishing Astra Labs, our team is hoping to connect engineering students in the Seneca community and provide them with the opportunity to participate in Launch Canada.</li><br>
 									</ul>
 
-									<h3 class="major">Frequently Asked Questions</h3>
+									<h4>Educate Others</h4>
+									<ul>
+										<li>We intend to educate others by promoting educational content related to space technology and innovation on our social media platforms.</li><br>
+									</ul>
+
+									<h4>Raise Funds</h4>
+									<ul>
+										<li>Through our sponsorship package and other initiatives, we are raising funds to help us participate in more events.</li><br>
+									</ul>
+
+									<h4>Showcase Our Efforts</h4>
+									<ul>
+										<li>We are planning to participate in Launch Canada's competition in August 2026.</li><br>
+									</ul><br><br>
+
+									<h3 class="major">Our Vision</h3>
+									<p>ASTRA Labs exists to provide Seneca students with hands-on experience in rocket design, fabrication, and testing. We believe that the best way to learn aerospace engineering is by building real systems that fly.</p>
 									
-									<h4>Do I need experience to join?</h4>
-									<p>Not at all! ASTRA Labs welcomes students from all programs and skill levels. We provide training and mentorship to help you learn.</p>
+									<ul class="alt">
+										<li><strong>Communication:</strong> To reach our goals, we must communicate with our team members on a regular basis.</li><br>
+										<li><strong>Respect:</strong> Team members must demonstrate respect for each other. We have zero tolerance for bullying and harassment.</li><br>
+										<li><strong>Collaboration:</strong> Our projects are huge and cannot be completed by one person alone.</li><br><br>
+									</ul>
 
-									<h4>Does my Program have to be STEM Related?</h4>
-									<p>No. We encourage all Seneca students to join. While having a STEM background can help, all we ask is that you are interested in science and innovation in the space sector.</p>
+									<h3 class="major">Why Rocketry?</h3>
+									<p>Rocketry is one of the most challenging and interdisciplinary fields in engineering. A successful rocket launch requires expertise in:</p>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Aerodynamics and fluid dynamics</li>
+												<li>Structural analysis and materials science</li>
+												<li>Propulsion and combustion engineering</li>
+												<li>Electronics and avionics</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Control systems and telemetry</li>
+												<li>Safety protocols and risk management</li>
+												<li>Project management and teamwork</li>
+												<li>Manufacturing and fabrication</li>
+											</ul>
+										</div>
+									</div>
+									<p>By working on rockets, our members gain real-world skills that directly translate to careers in aerospace, defense, and advanced manufacturing.</p>
 
-									<h4>Do I need to be a Seneca Student to Join?</h4>
-									<p>Yes, unfortunately, due to SSF policy, only students attending Seneca Polytechnic can join.</p>
-
-									<h4>How Long am I required to Participate?</h4>
-									<p>To receive a reference, we require that students dedicate at least 6 months of participation in our club</p>
-
-									<h4>Can I join mid-semester?</h4>
-									<p>Yes! We accept new members year-round. Reach out via email or social media to get started.</p>
+									<h3 class="major">Join Us</h3>
+									<p>ASTRA Labs is always looking for passionate students who want to build the future of space exploration.</p>
+									<p>Check out our <a href="events.html">Events & Contact</a> page to learn how to get involved.</p>
 
 								</div>
 							</div>
@@ -177,11 +242,12 @@ body {
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
