@@ -124,7 +124,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 20pt;
+		font-size: 18pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -264,11 +264,11 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 	h3 {
-		font-size: 1.1em;
+		font-size: 0.9em;
 	}
 
 	h4 {
