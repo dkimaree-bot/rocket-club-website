@@ -104,60 +104,37 @@ h4 {
 	font-size: 1em !important;
 }
 
-/* Mobile fixes */
+
+/* Force full width on mobile */
 @media screen and (max-width: 980px) {
-    body, input, select, textarea {
-        font-size: 16pt !important;
+    #page-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
-    p {
-        font-size: 1em !important;
+    body {
+        overflow-x: hidden !important;
     }
 
-    h2 {
-        font-size: 1.3em !important;
-    }
-
-    h3 {
-        font-size: 1em !important;
-    }
-
-    h4 {
-        font-size: 0.9em !important;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    body, input, select, textarea {
-        font-size: 14pt !important;
-    }
-
-    p {
-        font-size: 0.95em !important;
-    }
-
-    h2 {
-        font-size: 1.2em !important;
-    }
-
-    h3 {
-        font-size: 0.95em !important;
-    }
-
-    h4 {
-        font-size: 0.85em !important;
-    }
-
-    /* Fix spacing */
     .inner {
-        padding: 2em 1.5em !important;
+        max-width: 100% !important;
+        width: 100% !important;
     }
 
     #banner .inner {
-        padding: 3em 2em !important;
+        width: 100% !important;
+        padding: 3em 1.5em !important;
+    }
+
+    .wrapper .inner {
+        width: 100% !important;
+        padding: 2em 1.5em !important;
+    }
+
+    section {
+        width: 100% !important;
     }
 }
-			
 </style>
 
 	</head>
@@ -309,6 +286,7 @@ h4 {
 	</body>
 
 </html>
+
 
 
 
