@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Our Work - ASTRA Labs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Page background */
+			body {
+				background-image:
+					linear-gradient(to top, rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+					url("images/rocket-bg.jpg");
+				background-size: cover;
+				background-attachment: fixed;
+				background-position: center;
+			}
+
+			/* Color overrides */
+			:root {
+				--primary-red: #C51D34;
+				--dark-bg: #2E2E30;
+			}
+
+			#header { background-color: var(--dark-bg); }
+			
+			.button { 
+				background-color: var(--primary-red); 
+				border-color: var(--primary-red);
+			}
+			.button:hover { 
+				background-color: #a01628; 
+			}
+			
+			a { color: var(--primary-red); }
+			a:hover { color: #a01628; }
+			
+			h2, h3, h4 { color: var(--primary-red); }
+			
+			#footer { background-color: var(--dark-bg); }
+
+			/* Menu styles */
+			#menu {
+				background-color: var(--dark-bg);
+			}
+
+			#menu .inner {
+				background-color: var(--primary-red);
+			}
+
+			#menu ul.links li a {
+				color: #ffffff;
+			}
+
+			#menu ul.links li a:hover {
+				background-color: #a01628;
+			}
+
+			#menu h2 {
+				color: #ffffff;
+			}
+
+			#menu .close {
+				color: #ffffff;
+			}
+
+			/* Force larger text */
+			body, input, select, textarea {
+				font-size: 20pt !important;
+			}
+
+			p {
+				font-size: 1.1em !important;
+			}
+
+			h2 {
+				font-size: 1.6em !important;
+			}
+
+			h3 {
+				font-size: 1.2em !important;
+			}
+
+			h4 {
+				font-size: 1em !important;
+			}
+
+			/* Masonry Gallery Grid */
+			.gallery-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				grid-auto-rows: 200px;
+				gap: 20px;
+				padding: 2em 0;
+			}
+
+			.gallery-item {
+				position: relative;
+				overflow: hidden;
+				border-radius: 8px;
+				background: rgba(0, 0, 0, 0.3);
+				transition: transform 0.3s ease;
+			}
+
+			.gallery-item:hover {
+				transform: scale(1.02);
+			}
+
+			/* Different sizes for variety */
+			.gallery-item.tall {
+				grid-row: span 2;
+			}
+
+			.gallery-item.wide {
+				grid-column: span 2;
+			}
+
+			.gallery-item.big {
+				grid-row: span 2;
+				grid-column: span 2;
+			}
+
+			.gallery-item img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+			}
+
+			.gallery-caption {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+				padding: 1.5em 1em 1em;
+				color: #fff;
+				transform: translateY(100%);
+				transition: transform 0.3s ease;
+			}
+
+			.gallery-item:hover .gallery-caption {
+				transform: translateY(0);
+			}
+
+			.gallery-caption h4 {
+				margin: 0 0 0.3em 0;
+				font-size: 1em;
+				color: #fff;
+			}
+
+			.gallery-caption p {
+				margin: 0;
+				font-size: 0.85em;
+				opacity: 0.9;
+			}
+
+			@media screen and (max-width: 736px) {
+				.gallery-grid {
+					grid-template-columns: 1fr;
+					grid-auto-rows: 250px;
+				}
+
+				.gallery-item.wide,
+				.gallery-item.big {
+					grid-column: span 1;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">ASTRA Labs</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="gallery.html">Our Work</a></li>
+								<li><a href="events.html">Events & Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Our Work & Photos</h2>
+								<p>A showcase of our projects, launches, events, and team moments.</p>
+							</div>
+						</header>
+
+						<!-- Gallery Content -->
+						<div class="wrapper">
+							<div class="inner">
+
+								<div class="gallery-grid">
+									
+									<!-- Photo 1 - Big -->
+									<div class="gallery-item big">
+										<img src="images/gal01.jpg" alt="Launch Day">
+										<div class="gallery-caption">
+											<h4>Launch Day Success</h4>
+											<p>Our first successful rocket launch at the Ontario site.</p>
+										</div>
+									</div>
+
+									<!-- Photo 2 -->
+									<div class="gallery-item">
+										<img src="images/gal02.jpg" alt="Team Photo">
+										<div class="gallery-caption">
+											<h4>Team ASTRA</h4>
+											<p>The crew behind the rockets.</p>
+										</div>
+									</div>
+
+									<!-- Photo 3 - Tall -->
+									<div class="gallery-item tall">
+										<img src="images/gal03.jpg" alt="Rocket Assembly">
+										<div class="gallery-caption">
+											<h4>Rocket Assembly</h4>
+											<p>Putting together our competition rocket.</p>
+										</div>
+									</div>
+
+									<!-- Photo 4 -->
+									<div class="gallery-item">
+										<img src="images/gal04.jpg" alt="CAD Design">
+										<div class="gallery-caption">
+											<h4>CAD Design Session</h4>
+											<p>Designing rocket components in SolidWorks.</p>
+										</div>
+									</div>
+
+									<!-- Photo 5 - Wide -->
+									<div class="gallery-item wide">
+										<img src="images/gal05.jpg" alt="Workshop">
+										<div class="gallery-caption">
+											<h4>Workshop Series</h4>
+											<p>Teaching new members about propulsion systems.</p>
+										</div>
+									</div>
+
+									<!-- Photo 6 -->
+									<div class="gallery-item">
+										<img src="images/gal06.jpg" alt="Testing">
+										<div class="gallery-caption">
+											<h4>Engine Testing</h4>
+											<p>Testing motor performance in the lab.</p>
+										</div>
+									</div>
+
+									<!-- Photo 7 - Tall -->
+									<div class="gallery-item tall">
+										<img src="images/gal07.jpg" alt="Club Fair">
+										<div class="gallery-caption">
+											<h4>Newham Clubs Fest</h4>
+											<p>Recruiting new members at the fall clubs fest.</p>
+										</div>
+									</div>
+
+									<!-- Photo 8 -->
+									<div class="gallery-item">
+										<img src="images/gal08.jpg" alt="Launch Prep">
+										<div class="gallery-caption">
+											<h4>Launch Preparation</h4>
+											<p>Final checks before liftoff.</p>
+										</div>
+									</div>
+
+									<!-- Photo 9 -->
+									<div class="gallery-item">
+										<img src="images/gal09.jpg" alt="Recovery">
+										<div class="gallery-caption">
+											<h4>Parachute Recovery</h4>
+											<p>Successful parachute deployment and landing.</p>
+										</div>
+									</div>
+
+									<!-- Photo 10 - Wide -->
+									<div class="gallery-item wide">
+										<img src="images/gal10.jpg" alt="Team Meeting">
+										<div class="gallery-caption">
+											<h4>Team Meeting</h4>
+											<p>Planning our next competition strategy.</p>
+										</div>
+									</div>
+
+									<!-- Photo 11 -->
+									<div class="gallery-item">
+										<img src="images/gal11.jpg" alt="Electronics">
+										<div class="gallery-caption">
+											<h4>Avionics Bay</h4>
+											<p>Wiring the flight computer and sensors.</p>
+										</div>
+									</div>
+
+									<!-- Photo 12 - Tall -->
+									<div class="gallery-item tall">
+										<img src="images/pic13.jpg" alt="Competition">
+										<div class="gallery-caption">
+											<h4>Competition Day</h4>
+											<p>Representing Seneca at the regional challenge.</p>
+										</div>
+									</div>
+
+									<!-- Photo 13 -->
+									<div class="gallery-item">
+										<img src="images/updates.jpg" alt="Updates">
+										<div class="gallery-caption">
+											<h4>Latest Updates</h4>
+											<p>Progress on our current build.</p>
+										</div>
+									</div>
+
+									<!-- Photo 14 -->
+									<div class="gallery-item">
+										<img src="images/ssfclubev.jpg" alt="SSF Event">
+										<div class="gallery-caption">
+											<h4>SSF Appreciation</h4>
+											<p>Thank you to SSF for their support.</p>
+										</div>
+									</div>
+
+									<!-- Photo 15 - Wide -->
+									<div class="gallery-item wide">
+										<img src="images/rocketevent.jpg" alt="Rocket Event">
+										<div class="gallery-caption">
+											<h4>Community Outreach</h4>
+											<p>Showcasing our work to the Seneca community.</p>
+										</div>
+									</div>
+
+									<!-- Photo 16 -->
+									<div class="gallery-item">
+										<img src="images/joinus.jpg" alt="Join Us">
+										<div class="gallery-caption">
+											<h4>Join ASTRA Labs</h4>
+											<p>We're always looking for passionate students.</p>
+										</div>
+									</div>
+
+									<!-- Photo 17 - Tall -->
+									<div class="gallery-item tall">
+										<img src="images/whoweare.jpeg" alt="Who We Are">
+										<div class="gallery-caption">
+											<h4>Who We Are</h4>
+											<p>Students passionate about space innovation.</p>
+										</div>
+									</div>
+
+									<!-- Photo 18 -->
+									<div class="gallery-item">
+										<img src="images/aboutus.jpg" alt="About Us">
+										<div class="gallery-caption">
+											<h4>Our Story</h4>
+											<p>Building the future of student rocketry.</p>
+										</div>
+									</div>
+
+									<!-- Photo 19 - Big -->
+									<div class="gallery-item big">
+										<img src="images/events2.jpg" alt="Events">
+										<div class="gallery-caption">
+											<h4>Upcoming Events</h4>
+											<p>Check out what we have planned next.</p>
+										</div>
+									</div>
+
+									<!-- Photo 20 -->
+									<div class="gallery-item">
+										<img src="images/logorocket.jpg" alt="Logo">
+										<div class="gallery-caption">
+											<h4>ASTRA Labs</h4>
+											<p>Our official club logo.</p>
+										</div>
+									</div>
+
+									<!-- Add more gallery items here as needed -->
+									<!-- Just copy one of the above blocks and change the image/caption -->
+
+								</div>
+
+							</div>
+						</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Connect With Us</h2>
+							<ul class="contact">
+								<a href="https://www.linkedin.com/company/astra-labs-engineers/" target="_blank">LinkedIn - ASTRA Labs Engineers</a><br>
+								<a href="https://www.instagram.com/astra.labs.engineers/" target="_blank">Instagram - @astra.labs.engineers</a>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2025 ASTRA Labs. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
