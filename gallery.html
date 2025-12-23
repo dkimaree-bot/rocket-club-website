@@ -107,19 +107,20 @@
 				transform: scale(1.02);
 			}
 
-			/* Different sizes for variety */
-			.gallery-item.tall {
-				grid-row: span 2;
-			}
+			/* Different sizes for variety - portrait focused */
+.gallery-item.tall {
+	grid-row: span 3; /* Extra tall */
+}
 
-			.gallery-item.wide {
-				grid-column: span 2;
-			}
+.gallery-item.wide {
+	grid-row: span 2; /* Changed from wide to tall */
+	grid-column: span 1;
+}
 
-			.gallery-item.big {
-				grid-row: span 2;
-				grid-column: span 2;
-			}
+.gallery-item.big {
+	grid-row: span 4; /* Very tall, not wide */
+	grid-column: span 1;
+}
 
 			.gallery-item img {
 				width: 100%;
@@ -157,16 +158,27 @@
 			}
 
 			@media screen and (max-width: 736px) {
-				.gallery-grid {
-					grid-template-columns: 1fr;
-					grid-auto-rows: 250px;
-				}
+	.gallery-grid {
+		grid-template-columns: 1fr;
+		grid-auto-rows: 300px; /* Taller on mobile too */
+	}
 
-				.gallery-item.wide,
-				.gallery-item.big {
-					grid-column: span 1;
-				}
-			}
+	.gallery-item.tall {
+		grid-row: span 2;
+	}
+
+	.gallery-item.wide {
+		grid-row: span 2;
+	}
+
+	.gallery-item.big {
+		grid-row: span 3;
+	}
+
+	.gallery-caption {
+		transform: translateY(0); /* Always visible on mobile */
+	}
+}
 		</style>
 	</head>
 	<body class="is-preload">
